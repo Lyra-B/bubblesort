@@ -1,8 +1,8 @@
-require 'test/unit'
+require 'minitest/autorun'
 require 'pry'
 require_relative 'my_amazing_array'
 
-class MyAmazingTest < Test::Unit::TestCase
+class MyAmazingTest < MiniTest::Test
 
   def test_sum
     assert_equal 15, (1..5).to_a.sum
