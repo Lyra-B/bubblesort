@@ -23,17 +23,12 @@ class Array
   # elements are in order
   #
   def bubble_sort
-    i=0 
-    self.map do |k| 
-      def swap 
-      end 
-      for i in 0...self.length
+    
+      for i in 0...self.length 
         if self[i].to_i > self[i+1].to_i 
-        self.insert(i, self.delete_at(i+1)) 
-          # elsif self[i].to_i <=self[i+1].to_i 
-          #   next
-          #   self[i] = self[i+1] 
+          self.insert(i, self.delete_at(i+1)) 
         end 
+      end 
           # if i = self.length - 1 
           #   self.compact 
           # end 
@@ -69,8 +64,7 @@ class Array
         # #     puts self[i],self[i+1]
         # #     i+=1
         # #     if self[i] > self[i+1]
-      end 
-    end 
-    self
+    
+    self.compact
   end
 end
